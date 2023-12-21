@@ -1,0 +1,6 @@
+.vertical-timeline{
+    padding: 6em 0;
+}
+.vertical-timeline-element-content{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
