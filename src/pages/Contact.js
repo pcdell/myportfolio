@@ -70,9 +70,9 @@ const ContactForm = () => {
               Feel free to contact me if you have any questions or if you want
               to talk!
             </p>
-            <p>Email: your.email@example.com</p>
-            <p>Contact: +1 123-456-7890</p>
-            <p>Address: 123 Main St, City, Country</p>
+            <p>Email: jdtrabulo@gmail.com</p>
+            <p>Contact: 915485518</p>
+            <p>City: Porto</p>
           </div>
         </div>
     </div>
