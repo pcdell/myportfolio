@@ -64,7 +64,7 @@ function Experience() {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="Jan2022 - July2022"
+          date="Sept2021 - July2022"
           iconStyle={{ background: "#e9d35b", color: "#fff" }}
           icon={<WorkIcon />}
         >
@@ -92,6 +92,39 @@ function Experience() {
           <p>
             Bartender and Waiter
           </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="Dec2023 - Present"
+          iconStyle={{ background: "#e9d35b", color: "#fff" }}
+          icon={<WorkIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Website - artpeliculas
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            Porto
+          </h4>
+          <p>
+            Developing and maintaining a website for the company
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--education"
+          date="April2024 - May2024"
+          iconStyle={{ background: "#3e497a", color: "#fff" }}
+          icon={<SchoolIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Certificate in Teaching Skills
+          </h3>
+
+          <h4 className="vertical-timeline-element-subtitle">
+            IEFP/NetForce
+          </h4>
+
+          <p> Qualification that verifies an individual's aptitude for 
+    pedagogical practice.</p>
         </VerticalTimelineElement>
       </VerticalTimeline>
     </div>

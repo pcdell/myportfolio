@@ -76,22 +76,23 @@ svg:hover {
   filter: drop-shadow(0 0 1rem  #000000);
 }
 
-p{
+.p1{
   margin: 0;
 }
 
 .skills {
-  font-size: 35px;
+  font-size: 28px;
   width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding-bottom: 20px;
 }
 
 .skills h1 {
   color: #093B5D;
+  margin: 0;
 }
 
 .skills .list {
@@ -101,7 +102,7 @@ p{
 }
 
 .list span {
-  font-size: 20px;
+  font-size: 17px;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -150,4 +151,13 @@ p{
   .about img {
     width: 50%;
   }
+}
+
+.project-display {
+  margin: 10vh;
+}
+.project-display h2{
+  text-align: center;
+  font-size: 46.9px;
+  padding-bottom: 20px;
 }

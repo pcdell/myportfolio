@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { ProjectList } from "../helpers/ProjectList";
-import GitHubIcon from "@mui/icons-material/GitHub";
+
 import "../styles/ProjectDisplay.css";
 
 function ProjectDisplay() {
@@ -14,7 +14,6 @@ function ProjectDisplay() {
       <p>
         <b>Skills:</b> {project.skills}
       </p>
-      <GitHubIcon />
     </div>
   );
 }
