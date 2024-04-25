@@ -26,3 +26,18 @@
   font-size: 60px;
   color: #3e497a;
 }
+
+@media only screen and (max-width: 850px) {
+
+  .project img {
+    width: 400px;
+    border-radius: 10px;
+  }
+}
+@media only screen and (max-width: 500px) {
+
+  .project img {
+    width: 250px;
+    border-radius: 10px;
+  }
+}

@@ -5,9 +5,14 @@ import GithubIcon from "@mui/icons-material/GitHub";
 import "../styles/Home.css";
 import { motion } from "framer-motion"
 import Me from "../assets/Me.jpg";
+import Slider from "../helpers/Carousel";
+import TerminalIcon from '@mui/icons-material/Terminal';
+import WebIcon from '@mui/icons-material/Web';
+import SettingsInputComponentIcon from '@mui/icons-material/SettingsInputComponent';
+import StorageIcon from '@mui/icons-material/Storage';
+
 
 import { useInView } from "react-intersection-observer";
-
 
 
 
@@ -16,6 +21,8 @@ function Home() {
     threshold: 0.5,
     triggerOnce: false
   });
+
+  
 
   const variants = {
     visible: { opacity: 1, scale: 1, y: 0 },
@@ -55,10 +62,10 @@ const openMailToLink = () => {
           transition={{ yoyo: Infinity, duration: 1, ease: "easeInOut", }}
           >
           <h4>Hi, my name is</h4>
-          <h2>João Tabulo</h2>
+          <h2>João Trabulo</h2>
             <div className="prompt">
-              <p>
-                <h3><span class="underline"></span>A Frontend developer with a passion for learning and creating.</h3>
+              <p className="p1">
+                <h3><span class="underline"></span>A Full stack developer with a passion for learning and creating.</h3>
               </p>
               <LinkedInIcon
               aria-label="Linkedin.com"
@@ -81,6 +88,12 @@ const openMailToLink = () => {
           <img src={Me} alt={"Myself"}/>
         </motion.div>
       </div>
+
+      <div className="project-display">
+      <h2> Projects</h2>
+      <Slider/>
+      </div>
+
       <motion.div className="skills"
           animate={inView ? "visible" : "hidden"}
           variants={variants}
@@ -89,24 +102,41 @@ const openMailToLink = () => {
           ref={ref}>
         <h1> Skills</h1>
         <ol className="list">
+        
+        <li className="item">
+            <h2>Programing Languages  <TerminalIcon></TerminalIcon></h2>
+            <span>JavaScript, C, Python, PHP</span>
+          </li>
           <li className="item">
-            <h2> Front-End</h2>
+          
+            <h2> Front-End <WebIcon></WebIcon></h2>
             <span>
-              ReactJS, Angular, HTML, CSS, NPM, BootStrap
+              ReactJS, HTML, CSS, BootStrap, Django
             </span>
           </li>
           <li className="item">
-            <h2>Back-End</h2>
+            <h2>Back-End <SettingsInputComponentIcon></SettingsInputComponentIcon></h2>
             <span>
-              Xampp, phpMyAdmin, .NET, MySQL, MS SQL, Apache
+              Xampp, Apache, Django, NPM
             </span>
           </li>
           <li className="item">
-            <h2>Languages</h2>
-            <span>JavaScript, C#, C</span>
+            <h2>CI/CD <GithubIcon></GithubIcon></h2>
+            <span>
+              GitHub, GitLab, Docker
+            </span>
+          </li>
+          <li className="item">
+            <h2>Database Management <StorageIcon></StorageIcon></h2>
+            <span>
+              MySQL, postgreSQL, SQLite
+            </span>
           </li>
         </ol>
       </motion.div>
+
+      
+    
     </div>
   );
 }
